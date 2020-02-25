@@ -16,3 +16,33 @@ Tool for generating HTML Boilerplate & Pages for fast front-end  development.
 - [ ] Write documenation
 - [ ] Publish to `npm`
 
+## Usage
+
+### Install
+
+```bash
+npm install -g philwamba/boil#master
+```
+
+### Check version
+
+```bash
+boil --version
+```
+
+### Create a boilerplate 
+
+```bash
+boil
+```
+### Help
+
+```bash
+boil --help
+```
+
+### Uninstall
+
+```bash
+npm uninstall -g philwamba/boil#master
+```
