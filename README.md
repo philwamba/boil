@@ -13,5 +13,6 @@ Tool for generating HTML Boilerplate & Pages for fast front-end  development.
 - [x] Install Dependencies
 - [x] Add Inquirer
 - [x] Add `commander`
+- [ ] Write documenation
 - [ ] Publish to `npm`
 
