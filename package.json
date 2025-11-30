@@ -32,10 +32,8 @@
   ],
   "author": "Phil Wamba <philwamba@yahoo.com>",
   "license": "MIT",
-  "devDependencies": {
-    "eslint": "^9.39.1",
-    "eslint-config-airbnb-base": "^14.0.0",
-    "eslint-plugin-import": "^2.20.1"
+  "engines": {
+    "node": ">=18.0.0"
   },
   "dependencies": {
     "boxen": "^7.1.1",
