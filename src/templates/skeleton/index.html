@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="<%= description %>">
+    <title><%= title %></title>
+    
+    <!-- Skeleton CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="container">
+            <h4 class="brand"><%= projectName %></h4>
+            <nav>
+                <a href="#" class="nav-link">Home</a>
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <div class="container">
+            <div class="row">
+                <div class="twelve columns">
+                    <h1>Welcome to <%= projectName %></h1>
+                    <p class="lead">A lightweight, minimal boilerplate built with Skeleton CSS and Boil CLI</p>
+                    <a href="#" class="button button-primary">Get Started</a>
+                    <a href="#" class="button">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Features Section -->
+    <div id="features" class="section">
+        <div class="container">
+            <div class="row">
+                <div class="twelve columns center">
+                    <h2>Features</h2>
+                    <p>Everything you need to get started</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="four columns feature">
+                    <h5>⚡ Fast</h5>
+                    <p>Lightning-fast load times</p>
+                </div>
+                <div class="four columns feature">
+                    <h5>📱 Responsive</h5>
+                    <p>Works on all devices</p>
+                </div>
+                <div class="four columns feature">
+                    <h5>🎨 Clean</h5>
+                    <p>Minimal, elegant design</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div id="about" class="section section-dark">
+        <div class="container">
+            <div class="row">
+                <div class="six columns">
+                    <h3>About This Project</h3>
+                    <p>Built with Skeleton CSS, a lightweight (~400 lines) CSS framework. Perfect for small projects or when you need a minimal starting point.</p>
+                    <ul>
+                        <li>Skeleton CSS 2.0.4</li>
+                        <li>12-column Grid</li>
+                        <li>Minimal Styling</li>
+                        <li>SEO Ready</li>
+                    </ul>
+                </div>
+                <div class="six columns">
+                    <div class="placeholder">
+                        <p>Image placeholder</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div id="contact" class="section">
+        <div class="container">
+            <div class="row">
+                <div class="eight columns offset-by-two">
+                    <h3 class="center">Get In Touch</h3>
+                    <form>
+                        <div class="row">
+                            <div class="twelve columns">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" class="u-full-width" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="twelve columns">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" class="u-full-width" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="twelve columns">
+                                <label for="message">Message</label>
+                                <textarea id="message" class="u-full-width" required></textarea>
+                            </div>
+                        </div>
+                        <input type="submit" value="Send Message" class="button-primary u-full-width">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="twelve columns center">
+                    <p>&copy; <%= new Date().getFullYear() %> <%= projectName %>. All rights reserved.</p>
+                    <p>Built with <a href="https://github.com/philwamba/boil">Boil CLI</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
