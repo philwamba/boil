@@ -241,7 +241,7 @@ Built with these amazing tools:
 
 - 🐛 [Report a bug](https://github.com/philwamba/boil/issues)
 - 💡 [Request a feature](https://github.com/philwamba/boil/issues)
-- 📧 Email: philwamba@yahoo.com
+- 📧 Email: philwamba@vinetech.co.ke
 
 ---
 
