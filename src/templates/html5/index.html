@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="<%= description %>">
+    <meta name="keywords" content="<%= keywords %>">
+    <meta name="author" content="">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="<%= title %>">
+    <meta property="og:description" content="<%= description %>">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="<%= title %>">
+    
+    <title><%= title %></title>
+    
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    
+    <% if (iconCDN) { %>
+    <%= iconCDN %>
+    <% } %>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="#" class="logo"><%= projectName %></a>
+                <button class="nav-toggle" id="navToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#" class="nav-link active">Home</a></li>
+                    <li><a href="#features" class="nav-link">Features</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Welcome to <%= projectName %></h1>
+                    <p class="hero-subtitle">A clean, minimal HTML5 boilerplate built with Boil CLI. No frameworks, just pure HTML, CSS, and JavaScript.</p>
+                    <div class="hero-buttons">
+                        <a href="#" class="btn btn-primary">Get Started</a>
+                        <a href="#" class="btn btn-secondary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Features</h2>
+                    <p>Everything you need to get started</p>
+                </div>
+                <div class="grid">
+                    <div class="card">
+                        <div class="card-icon">⚡</div>
+                        <h3>Fast Performance</h3>
+                        <p>Lightning-fast load times with no unnecessary dependencies.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">📱</div>
+                        <h3>Responsive Design</h3>
+                        <p>Looks great on desktop, tablet, and mobile devices.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">🎨</div>
+                        <h3>Modern Design</h3>
+                        <p>Clean, modern interface with smooth animations.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section section-alt">
+            <div class="container">
+                <div class="two-column">
+                    <div>
+                        <h2>About This Project</h2>
+                        <p class="lead">This template was generated using Boil CLI. It's a pure HTML5, CSS3, and JavaScript boilerplate with no external frameworks.</p>
+                        <ul class="checklist">
+                            <li>✓ Semantic HTML5</li>
+                            <li>✓ Modern CSS3 with CSS Variables</li>
+                            <li>✓ Vanilla JavaScript ES6+</li>
+                            <li>✓ SEO Optimized</li>
+                            <li>✓ Mobile First</li>
+                        </ul>
+                    </div>
+                    <div class="placeholder">
+                        <p>Image or content placeholder</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="container">
+                <div class="contact-wrapper">
+                    <div class="section-header">
+                        <h2>Get In Touch</h2>
+                        <p>We'd love to hear from you</p>
+                    </div>
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; <%= new Date().getFullYear() %> <%= projectName %>. All rights reserved.</p>
+                <p>Built with <a href="https://github.com/philwamba/boil">Boil CLI</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
