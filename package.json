@@ -64,7 +64,7 @@
     "typescript": "^5.3.3"
   },
   "optionalDependencies": {
-    "sharp": "^0.35.0"
+    "sharp": "^0.35.4"
   },
   "files": [
     "dist",
